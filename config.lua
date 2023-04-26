@@ -39,7 +39,7 @@ lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
 -- Automatically install missing parsers when entering buffer
-lvim.builtin.treesitter.auto_install = true
+lvim.builtin.treesitter.auto_install = false
 
 -- lvim.builtin.treesitter.ignore_install = { "haskell" }
 
@@ -137,6 +137,33 @@ lvim.plugins = {
   {
     "ayu-theme/ayu-vim",
   },
+  {
+    "rose-pine/neovim",
+  },
+  {
+    "arturgoms/moonbow.nvim",
+  },
+  {
+    "Julpikar/night-owl.nvim",
+    {
+      "Shatur/neovim-ayu",
+    },
+  },
+  {
+    "folke/tokyonight.nvim",
+    config = function()
+      vim.cmd("colorscheme tokyonight")
+    end,
+  },
+  "folke/todo-comments.nvim",
+  requires = "nvim-lua/plenary.nvim",
+  config = function()
+    require("todo-comments").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
 }
 -- -- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
