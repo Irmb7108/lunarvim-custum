@@ -1,4 +1,4 @@
-local M = {}
+ocal M = {}
 
 local banner = {
   "                ⢀⣀⣤⣤⣤⣶⣶⣶⣶⣶⣶⣤⣤⣤⣀⡀                ",
