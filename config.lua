@@ -30,7 +30,7 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 -- -- Change theme settings
-lvim.colorscheme = "lunar"
+lvim.colorscheme = "catppuccin"
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -132,6 +132,12 @@ lvim.plugins = {
     "lunarvim/horizon.nvim",
   },
   {
+    "catppuccin/nvim",
+    config = function()
+      require("catppuccin").setup {}
+    end,
+  },
+  {
     "tomasr/molokai",
   },
   {
@@ -150,6 +156,13 @@ lvim.plugins = {
     },
   },
   {
+    "ChristianChiarulli/swenv.nvim",
+    "stevearc/dressing.nvim",
+    "mfussenegger/nvim-dap-python",
+    "nvim-neotest/neotest",
+    "nvim-neotest/neotest-python",
+  },
+  {
     "folke/tokyonight.nvim",
     config = function()
       vim.cmd("colorscheme tokyonight")
@@ -165,6 +178,7 @@ lvim.plugins = {
     }
   end
 }
+
 -- -- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
 -- -- Autocommands (`:help autocmd`) <https://neovim.io/doc/user/autocmd.html>
 -- vim.api.nvim_create_autocmd("FileType", {
