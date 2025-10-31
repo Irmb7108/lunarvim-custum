@@ -1,12 +1,10 @@
 # NvChad
-
-# Neovim نسخه 0.9 یا بالاتر
 nvim --version
 
 # Git
 git --version
 
-# Node.js و npm (برای بعضی پلاگین‌ها مثل telescope)
+# Node.js و npm 
 node --version
 npm --version
 ```
