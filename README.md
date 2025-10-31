@@ -8,8 +8,6 @@ git --version
 node --version
 npm --version
 ```
-
-
 # Download config.lua
 yay -S node npm
 # Clone LunarVim
