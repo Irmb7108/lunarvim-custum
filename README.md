@@ -8,7 +8,7 @@ git --version
 node --version
 npm --version
 ```
-# Download config.lua
+# Download 
 yay -S node npm
 # Clone LunarVim
 git clone https://github.com/NvChad/starter ~/.config/nvim && nvim
